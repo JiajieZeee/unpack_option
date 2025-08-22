@@ -1,0 +1,17 @@
+[package]
+name = "unpack_option"
+version = "0.1.0"
+edition = "2024"
+authors = ["JiajieZeee<735139914@qq.com>"]
+license = "MIT"
+description = "A Rust library that generates camelCase fields structs from struct with snake_case fields"
+homepage = "https://github.com/JiajieZeee/unpack_option"
+repository = "https://github.com/JiajieZeee/unpack_option"
+readme = "readme.md"
+keywords = ["unpack", "option"]
+
+[lib]
+name = "unpack_option"
+crate-type = ["lib"]
+
+[dependencies]
