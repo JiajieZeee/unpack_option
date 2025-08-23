@@ -1,7 +1,7 @@
 [package]
 name = "unpack_option"
-version = "0.1.0"
-edition = "2024"
+version = "0.1.1"
+edition = "2015"
 authors = ["JiajieZeee<735139914@qq.com>"]
 license = "MIT"
 description = "A Rust library that generates camelCase fields structs from struct with snake_case fields"
