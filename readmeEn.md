@@ -2,12 +2,12 @@
 中文请看 **[readme](/readme.md)**
 
 A lightweight Rust library that provides extension methods for the Option type, making it easy to convert Option<T> to Result<T, OptionError>.
+If you are using `anyhow`, it is more recommended to use `option.with_context(|| "option can not be null")?`
 
 ## Features
 - Implements the `OptionExt` trait for Option<T>
 - Provides two unpacking methods: `unpack()` and `unpack_for()`
 - Custom error type `OptionError` supporting generic errors and parameter-specific errors
-- With anyhow, backend services can propagate user-friendly errors to the frontend instead of panic
 
 ## Installation
 Add this to your `Cargo.toml`:

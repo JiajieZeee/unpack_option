@@ -2,12 +2,12 @@
 for English ,see **[readmeEn](/readmeEn.md)**
 
 一个轻量级Rust库，为Option类型提供扩展方法，便捷地将Option<T>转换为Result<T, OptionError>。
+如果你是和`anyhow`一起使用的话，更推荐使用option.with_context(|| "option can not be null")?
 
 ## 功能特点
 - 为Option<T>实现扩展 trait `OptionExt`
 - 提供两种解包方法：`unpack()` 和 `unpack_for()`
 - 自定义错误类型 `OptionError`，支持通用错误和参数名指定错误
-- 配合anyhow使用，更方便将错误传递给前端而不会panic
 
 ## 安装
 在`Cargo.toml`中添加依赖：
